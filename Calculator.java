@@ -19,12 +19,15 @@ public class Calculator extends Application {
         //creating an Array
         List<String>list=Arrays.asList("CE","C","Back","/","7","8","9","X","4" ,"5","6","-",
                 "1","2","3","+","+/-","0",".","=");
+
+        //creating a flowpane  layout to add the buttons to it
         FlowPane root=new FlowPane(5,5);
         root.setPadding(new Insets(15,10,15,10));
         root.setMaxWidth(320);
         root.setMinWidth(320);
         root.setPrefWidth(320);
         
+        //creating a textfield
         TextField t=new TextField("0");
         t.setEditable(false);
          t.setMinSize(295,45);
